@@ -51,10 +51,20 @@ app.get("/", (req, res) => {
 });
 
 app.get("/bacheca", (req, res) => {
-  res.json({
-    count: posts.length,
-    posts: posts,
-  });
+  const tag = req.query.tag;
+  if (tag) {
+    const filteredPosts = posts.filter((post) => {
+      return post.tags.includes(tag.toLowerCase());
+    });
+
+    res.json(filteredPosts);
+    console.log(filteredPosts);
+  } else {
+    res.json({
+      count: posts.length,
+      posts: posts,
+    });
+  }
 });
 
 app.listen(port, () => {
