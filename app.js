@@ -10,28 +10,28 @@ const posts = [
   {
     titolo: "Cracker di barbabietola",
     contenuto: "La ricetta",
-    immagine: "",
+    immagine: "img/cracker_barbabietola.jpeg",
     tags: ["cucina", "ricetta", "barbabietola"],
   },
 
   {
     titolo: "Pane fritto dolce",
     contenuto: "La ricetta",
-    immagine: "",
+    immagine: "img/pane_fritto_dolce.jpeg",
     tags: ["cucina", "ricetta", "pane"],
   },
 
   {
     titolo: "Pasta alla barbabietola",
     contenuto: "La ricetta",
-    immagine: "",
+    immagine: "img/pasta_barbabietola.jpeg",
     tags: ["cucina", "ricetta", "pasta"],
   },
 
   {
     titolo: "Torta paesana",
     contenuto: "La ricetta",
-    immagine: "",
+    immagine: "img/torta_paesana.jpeg",
     tags: ["cucina", "ricetta", "torta"],
   },
 ];
