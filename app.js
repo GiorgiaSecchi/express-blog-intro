@@ -3,7 +3,7 @@ const posts = [
   {
     titolo: "Ciambellone",
     contenuto: "La ricetta",
-    immagine: "",
+    immagine: "img/ciambellone.jpeg",
     tags: ["cucina", "ricetta", "ciambellone"],
   },
 
@@ -52,8 +52,8 @@ app.get("/", (req, res) => {
 
 app.get("/bacheca", (req, res) => {
   res.json({
-    posts: posts,
     count: posts.length,
+    posts: posts,
   });
 });
 
