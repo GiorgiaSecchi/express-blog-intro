@@ -18,7 +18,7 @@ const posts = [
     titolo: "Pane fritto dolce",
     contenuto: "La ricetta",
     immagine: "",
-    tags: ["cucina", "ricetta", "Pane"],
+    tags: ["cucina", "ricetta", "pane"],
   },
 
   {
@@ -48,6 +48,13 @@ app.get("/", (req, res) => {
   const text = "Server del mio blog";
   res.send(text);
   //   res.type("json").send(text) --> res.json(text)
+});
+
+app.get("/bacheca", (req, res) => {
+  res.json({
+    posts: posts,
+    count: posts.length,
+  });
 });
 
 app.listen(port, () => {
