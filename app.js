@@ -3,35 +3,35 @@ const posts = [
   {
     titolo: "Ciambellone",
     contenuto: "La ricetta",
-    immagine: "img/ciambellone.jpeg",
+    immagine: "/img/ciambellone.jpeg",
     tags: ["cucina", "ricetta", "ciambellone"],
   },
 
   {
     titolo: "Cracker di barbabietola",
     contenuto: "La ricetta",
-    immagine: "img/cracker_barbabietola.jpeg",
+    immagine: "/img/cracker_barbabietola.jpeg",
     tags: ["cucina", "ricetta", "barbabietola"],
   },
 
   {
     titolo: "Pane fritto dolce",
     contenuto: "La ricetta",
-    immagine: "img/pane_fritto_dolce.jpeg",
+    immagine: "/img/pane_fritto_dolce.jpeg",
     tags: ["cucina", "ricetta", "pane"],
   },
 
   {
     titolo: "Pasta alla barbabietola",
     contenuto: "La ricetta",
-    immagine: "img/pasta_barbabietola.jpeg",
+    immagine: "/img/pasta_barbabietola.jpeg",
     tags: ["cucina", "ricetta", "pasta"],
   },
 
   {
     titolo: "Torta paesana",
     contenuto: "La ricetta",
-    immagine: "img/torta_paesana.jpeg",
+    immagine: "/img/torta_paesana.jpeg",
     tags: ["cucina", "ricetta", "torta"],
   },
 ];
@@ -56,7 +56,6 @@ app.get("/bacheca", (req, res) => {
     const filteredPosts = posts.filter((post) => {
       return post.tags.includes(tag.toLowerCase());
     });
-
     res.json(filteredPosts);
     console.log(filteredPosts);
   } else {
